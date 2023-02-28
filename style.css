@@ -4,7 +4,8 @@
     padding: 0;
     
     box-sizing: border-box;
-    
+        text-decoration: none;
+
     font-family: 'Almarai', sans-serif;
     text-decoration: none;
     
@@ -213,6 +214,9 @@ background-color: #08A6A6;
     border-radius:10px;
 }
 
+.btn a{
+    text-decoration: none;
+}
     
 @media screen and (min-width:400px) and (max-width:600px) {
     .Logo{
