@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@800&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+    
+    font-family: 'Almarai', sans-serif;
+    text-decoration: none;
+    
+
+    
+}
+/* اتحكم بالخطوط والألوان */
+
+
+body{
+    background-color: #1F2426;
+
+}
+/* نتحكم بحجم لوغو */
+.Logo{
+    height: 45px;
+    width: 45px;   
+    border-radius: 50%;
+    
+}
+/*  نتحكم وأضافة تأثيرات */
+.Logo_conter{
+    overflow: hidden;
+    display: flex;
+    height: 50px;
+    width: 220px;
+    background: #fff;
+    box-shadow: 0px 10px 20px 3px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+
+
+}
+/* نعدل على نص لوجو */
+#textIcon{
+    color: #fff;
+    font-weight: bold;
+    color: black;
+    margin-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+
+}
+/* نتحكم بحجم سايد بار */
+#sidpar{
+
+    overflow: hidden;
+    padding: 1rem;
+    height: 100vh;
+    width: 70px;
+    background: rgb(240, 240, 240);
+    transition: 0.3s;
+    border-radius: 10px 0 0 ;
+    position: relative;
+}
+#sidpar:hover{
+    width: 220px;
+
+}
+/* نتحكم بأماكن لايقونات والنص */
+.menu_list a{
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    color: black;
+
+}
+/* نتحكم بحجم لوغو */
+.menu_list i{
+    margin: 1rem;
+    font-size: 1.5rem;
+}
+
+/* هنا نضيف نتحكم بشكل عام بسيد بار */
+.menu_list  {
+
+    margin-top: 3rem;
+    height: 25vh;
+    width: 220px;
+    background: #fff;
+    align-items: center;
+    border-radius: 10px;  
+}
+
+.menu_list i{
+    color: red;
+}
+
+/* هاد كلاس مخصص فقك لي عناصر سيد بار الاخيرة*/
+.menu_list1{
+    height: 250px;
+}
+
+/* لأضافة تاثير تغير لون عندي نقر على احد عنصار */
+.Editlink:hover  {
+    background: rgb(238, 237, 238);
+    box-shadow: 0px 10px 20px 3px rgba(0, 0, 0, 0.2);
+
+
+}
+
+/* قسم خاص بسيد بار */
+.sidparLeft{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index:1 ;
+
+
+}
+/* هنا نعدل على نصوص قسم الرئيسي في الموقع */
+.text{
+    color:#43D9CA;
+    font-size: 1.5rem;
+}
+/* نعدل على ايقونة القسم الر ئيسية  */
+#img_icon{
+    height: 128px;
+    width: 128px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0px 10px 20px 3px rgba(0, 0, 0, 0.6);
+    margin: 10px;
+}
+
+/* نتحكم بحجم قسم مهارات  */
+.skils{
+    padding: 20px;
+    height: 60vh;
+    background-color: #08A6A6;
+}
+/* نتحكم بابطاقات المهارات   */
+.skil{
+    padding: 20px 20px 20px 20px;
+    width: 40vh;
+    height: 50vh;
+    background-color: #2E5959;
+    transition: 1s;
+    border-radius: 4px;
+
+}
+/* هنا نضيف تأثيرات في بطاقات مهارات */
+.skil:hover{
+    background-color: #43D9CA;
+    box-shadow: 0px 10px 20px 3px rgba(0, 0, 0, 0.6);
+    border-radius: 0px;
+}
+/* نتحكم بقسم عني */
+#About_my{
+    height: 100vh;
+}
+
+#img_shool{ 
+    z-index: 0;
+    position:  relative;
+    right: 10%;
+    margin-top: 10vh;
+    width: 600px;
+    border-radius: 10px;
+
+}   
+#text_aboutMy{
+    z-index: 0;
+    position: relative;
+    right: 10%;
+    margin-top: 10vh;
+    width: 600px;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: #43D9CA;
+    text-align: center;
+    line-height: 10vh;
+}
+#Call_My{
+height: 30vh;
+background-color: #08A6A6;
+}
+#text_call_my{
+    z-index: 0;
+    position: relative;
+    font-size: 1.5rem;
+    padding: 60px;
+
+}
+#menu{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+#menubtn{
+    visibility: hidden;
+}
+#Container_Text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 100vh;
+    text-align: center;
+    font-size: 2rem;
+}
+#Img_Shool{
+    width: 900px;
+    height: 400px;
+    border-radius:10px;
+}
+
+    
+@media screen and (min-width:400px) and (max-width:600px) {
+    .Logo{
+        height: 40px;
+        width: 40px;   
+        border-radius: 50%;
+        
+    }
+    #sidpar{
+        visibility: hidden;
+        overflow: hidden;
+        padding: 1rem;
+        height: 100vh;
+        width: 70px;
+        background: rgb(240, 240, 240);
+        transition: 0.3s;
+        border-radius: 10px 0 0 ;
+        position: relative;
+    }
+    #sidpar.active{
+        visibility: visible;
+        transition: 1s;
+    
+    }
+    #menubtn{
+        visibility: visible;
+    }
+    .SizeIconCards{
+        width: 64px;
+    }
+    .skils{
+        padding: 20px;
+        height: 190vh;
+        background-color: #08A6A6;
+    }
+    .skil{
+        margin: 30px 30px 30px 30px;
+        width: 40vh;
+        height: 50vh;
+        background-color: #2E5959;
+        transition: 1s;
+        border-radius: 4px;
+    
+    }
+    #skilEdit{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Container_Text{
+        font-size: 1.2rem;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    #Img_Shool{
+        width: 340px;
+        height: 400px;
+        border-radius:10px;
+    }
+    .H1-text{
+        font-size: 1rem;    }
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+    .Logo{
+        height: 40px;
+        width: 40px;   
+        border-radius: 50%;
+        
+    }
+    #sidpar{
+        visibility: hidden;
+        overflow: hidden;
+        padding: 1rem;
+        height: 100vh;
+        width: 70px;
+        background: rgb(240, 240, 240);
+        transition: 0.3s;
+        border-radius: 10px 0 0 ;
+        position: relative;
+    }
+    #sidpar.active{
+        visibility: visible;
+        transition: 1s;
+    
+    }
+    #menubtn{
+        visibility: visible;
+    }
+    .SizeIconCards{
+        width: 64px;
+    }
+    .skils{
+        padding: 20px;
+        height: 190vh;
+        background-color: #08A6A6;
+    }
+    .skil{
+        margin: 30px 30px 30px 30px;
+        width: 40vh;
+        height: 50vh;
+        background-color: #2E5959;
+        transition: 1s;
+        border-radius: 4px;
+    
+    }
+    #skilEdit{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Container_Text{
+        font-size: 1.2rem;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    #Img_Shool{
+        width: 340px;
+        height: 400px;
+        border-radius:10px;
+    }
+    .H1-text{
+        font-size: 1rem;    }
+}
+
+@media screen and (min-width:800px) and (max-width:1200px) {
+    .Logo{
+        height: 40px;
+        width: 40px;   
+        border-radius: 50%;
+        
+    }
+    #sidpar{
+        visibility: hidden;
+        overflow: hidden;
+        padding: 1rem;
+        height: 100vh;
+        width: 70px;
+        background: rgb(240, 240, 240);
+        transition: 0.3s;
+        border-radius: 10px 0 0 ;
+        position: relative;
+    }
+    #sidpar.active{
+        visibility: visible;
+        transition: 1s;
+    
+    }
+    #menubtn{
+        visibility: visible;
+    }
+    .SizeIconCards{
+        width: 64px;
+    }
+    .skils{
+        padding: 20px;
+        height: 190vh;
+        background-color: #08A6A6;
+    }
+    .skil{
+        margin: 30px 30px 30px 30px;
+        width: 40vh;
+        height: 50vh;
+        background-color: #2E5959;
+        transition: 1s;
+        border-radius: 4px;
+    
+    }
+    #skilEdit{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Container_Text{
+        font-size: 1.2rem;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    #Img_Shool{
+        width: 340px;
+        height: 400px;
+        border-radius:10px;
+    }
+    .H1-text{
+        font-size: 1rem;    }
+}
